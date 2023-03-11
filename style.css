@@ -22,8 +22,9 @@ body {
 	align-items: center;
 	width: 400px;
 	height: 400px;
-	background-color: #fff;
+	background-color: #aed;
 	box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+	
 }
 
 form {
@@ -33,6 +34,7 @@ form {
 	align-items: center;
 	width: 80%;
 	height: 100%;
+	
 }
 
 form h2 {
@@ -57,9 +59,11 @@ input[type="password"] {
 }
 
 input[type="submit"] {
-	width: 100%;
+	width: 120px;
 	height: 40px;
-	margin-top: 20px;
+	margin: 20px;
+	padding: 20px;
+	border-radius: 20px;
 	background-color: #4CAF50;
 	color: #fff;
 	border: none;
@@ -69,5 +73,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-	background-color: #3e8e41;
+	color: #3e8e41;
+	background-color: #fff;
+	border: 2px solid #3e8e41;
 }
