@@ -1,7 +1,7 @@
 # Digital Clock
 
-
 ![Digital Clock](image.png)
+
 
 ## Introduction
 The Digital Clock project is a web application that displays the current time in a 12-hour format (AM/PM). It provides a visually appealing and functional digital clock that can be integrated into any website or used as a standalone application.
