@@ -20,5 +20,7 @@ if(h > 12){
 hourE1.innerText = h;
 minuteE1.innerText = m;
 secondsE1.innerText = s;
+ampmE1.innerText = ampm;
+
 }
 updateTime();
