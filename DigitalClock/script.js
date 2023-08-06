@@ -16,11 +16,16 @@ if(h > 12){
     h = h - 12;
     ampm = "PM";
 }
+h =h < 10? "0" + h : h;
 
 hourE1.innerText = h;
 minuteE1.innerText = m;
 secondsE1.innerText = s;
 ampmE1.innerText = ampm;
+
+setTimeout( ()=>{
+    updateTime()
+}, 1000)
 
 }
 updateTime();
