@@ -9,7 +9,7 @@ function greetMe(){
     console.log("Hello David");
     setTimeout(()=>{    //the seTimeout out function is inside the call function to make it recursive.
         greetMe();
-    }, 1000)
+    }, 1000)            //infinite loop called at every second
     
 }
 
