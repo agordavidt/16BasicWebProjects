@@ -16,7 +16,17 @@ if(h > 12){
     h = h - 12;
     ampm = "PM";
 }
-h =h < 10? "0" + h : h;
+h = h < 10? "0" + h : h;
+/** this can also be written as 
+ * if(h<10){
+        return "0" + h;
+    } else{
+        return h;
+    }
+ * 
+ * 
+ */
+
 
 hourE1.innerText = h;
 minuteE1.innerText = m;

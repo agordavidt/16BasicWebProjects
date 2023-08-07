@@ -6,3 +6,4 @@ web development skills.
 
 ## Table of Contents
 1. Digital Clock
+2. Multiplication App
