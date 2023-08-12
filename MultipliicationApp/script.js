@@ -7,10 +7,16 @@ questionEl.innerText = `What is ${num1} multiply by ${num2}`;
 
 const inputEl = document.getElementById("input");
 const formEl = document.getElementById("form");
-
+const scoreEl = document.getElementById("score");
 
 
 let score = JSON.parse(localStorage.getItem("score"));
+
+if(!score){
+    score = 0;
+}
+
+scoreEl.innerText = `score: ${score}`
 
 const correctAns = num1 * num2;
 // add invent listerner to the html form to track submissions
