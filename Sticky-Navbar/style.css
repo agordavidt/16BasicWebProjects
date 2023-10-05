@@ -47,10 +47,9 @@ body{
 .navbar ul li a:hover{
     color: #c732c7;
 }
-
-.active{
+.navbar .active{
     background-color: black;
 }
-.active ul li a{
+.navbar .active ul li a{
     color: white;
 }

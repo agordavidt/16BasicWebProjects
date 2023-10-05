@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+        }
+
+        header {
+            width: 100%;
+            height: 100px;
+            background-color: #000;
+            color: #fff;
+        }
+
+        header h1 {
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        main {
+            width: 100%;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .post-container {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .post-image {
+            width: 100%;
+            max-width: 500px;
+            margin-bottom: 10px;
+        }
+
+        .post-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .post-content {
+            line-height: 1.5;
+        }
+
+        .post-content-hidden {
+            display: none;
+        }
+
+        .readmore-button {
+            text-align: right;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 768px) {
+            main {
+                max-width: 100%;
+            }
+
+            .post-container {
+                margin-bottom: 10px;
+            }
+
+            .post-image {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .post-title {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Blog</h1>
+    </header>
+
+    <main>
+        <div class="post-container">
+            <img class="post-image" src="https://example.com/image1.jpg" alt="Image 1">
+            <h2 class="post-title">The Role ICT Plays in Agriculture and The Environment</h2>
+            <p class="post-content">Information and communication technologies (ICTs) are playing an increasingly important role in agriculture and the environment. ICTs can be used to improve agricultural productivity, reduce environmental impact, and promote sustainable development.
+
+                ICTs can be used to improve agricultural productivity in a number of ways. For example, farmers can use ICTs to access information on weather forecasts, market prices, and best practices. They can also use ICTs to monitor crop health and livestock conditions remotely, control irrigation and fertilization systems, and automate tasks such as milking and harvesting.
+                
+                ICTs can also be used to help farmers reduce their environmental impact. For example, farmers can use ICTs to optimize the use of fertilizers and pesticides, reduce water consumption, and manage waste more effectively.
+                
+                ICTs can also be used to protect the environment and promote sustainable development. For example, ICTs can be used to monitor air and water quality, track the movement of endangered species, manage natural resources more effectively, and educate the public about environmental issues.
+            
+             <span class="post-content-hidden"> Here are a few examples of how ICTs are being used in agriculture and the environment today:
+
+                Precision agriculture: Precision agriculture is a farming management system that uses ICTs to collect and analyze data about crop health, soil conditions, and other factors. This data can then be used to make informed decisions about irrigation, fertilization, and other farming practices.
+                Drones: Drones are being used by farmers to monitor crop health, assess damage from pests and diseases, and apply pesticides and fertilizers more precisely.
+                Remote sensing: Remote sensing is the use of satellite imagery and other aerial data to collect information about the Earth's surface. Remote sensing data can be used to monitor deforestation, track the spread of invasive species, and identify areas that are at risk of drought or other natural disasters.
+                Environmental monitoring systems: Environmental monitoring systems use ICTs to collect and analyze data about air and water quality, noise levels, and other environmental indicators. This data can be used to identify and address environmental problems.
+                ICTs have the potential to revolutionize agriculture and the environment. By improving agricultural productivity, reducing environmental impact, and promoting sustainable development, ICTs can help us create a better future for all.
+                
+                In plain text, ICTs are helping farmers to grow more food with less environmental impact. They are also helping us to monitor and protect the environment.</span></p>
+
+            <button class="readmore-button">Read More</button>
+        </div>
+
+        <div class="post-container">
+            <img class="post-image" src="https://example.com/image2.jpg" alt="Image 2">
+            <h2 class="post-title">Another blog post</h2>
+            <p class="post-content">This is my second blog post. I'm going to write about a different topic each time, so I hope you'll come back and visit again soon.</p>
+        </div>
+    </main>
+
+    <script>
+        const readmoreButtons = document.querySelectorAll(".readmore-button");
+
+        readmoreButtons.forEach((button) => {
+            button.addEventListener("click", () => {
+                const postContentHidden = button.parentElement.querySelector(".post-content-hidden");
+
+                postContentHidden.classList.toggle("d-none");
+
+                if (postContentHidden.classList.contains("d-none")) {
+                    button.textContent = "Read More";
+                } else {
+                    button.textContent = "Read Less";
+                }
+            });
+        });
+    </script>
+</body>
+</html>
