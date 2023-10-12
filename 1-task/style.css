@@ -1,0 +1,74 @@
+body {
+    font-family: 'Pacifico', cursive;
+    background: url(images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    background-color: #dda;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+h1 {    
+    font-size: 36px;
+    color: #4CAF50;
+    margin: 0;
+}
+p{
+    font-size: 28px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+#countButton {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 15px 6px;
+}
+
+#saveButton {
+    background-color: #008CBA;
+    color: white;
+    border-radius: 6px 15px;
+}
+
+#countButton:hover {
+    background-color: transparent;
+    border: 1px solid #4CAF50;
+    color: #4CAF50;    
+}
+
+#saveButton:hover {
+    background-color: transparent;
+    border: 1px solid #008CBA;
+    color: #008CBA;    
+}
+
+
+#countDisplay {
+    font-size: 36px;
+    color: #4CAF50;
+}
+
+#savedCounts {
+    text-align: left;
+    margin-top: 20px;
+}
+
+#savedCounts p {
+    font-size: 16px;
+    margin: 5px 0;
+}
