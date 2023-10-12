@@ -1,21 +1,21 @@
 const maxSavedCounts = 3;
 let counts = [];
 let currentCount = 0;
-const countDisplay = document.getElementById("countDisplay");
-const countButton = document.getElementById("countButton");
-const saveButton = document.getElementById("saveButton");
+const countDisplayEl = document.getElementById("countDisplay");
+const countButtonEl = document.getElementById("countButton");
+const saveButtonEl = document.getElementById("saveButton");
 const savedCounts = document.getElementById("savedCounts");
 
 function updateCount() {
-    countDisplay.textContent = currentCount;
+    countDisplayEl.textContent = currentCount;
 }
 
-countButton.addEventListener("click", () => {
+countButtonEl.addEventListener("click", () => {
     currentCount++;
     updateCount();
 });
 
-saveButton.addEventListener("click", () => {
+saveButtonEl.addEventListener("click", () => {
     if (currentCount > 0) {
         counts.unshift(currentCount);
         currentCount = 0;
