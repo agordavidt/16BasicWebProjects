@@ -41,6 +41,7 @@ const questions = [
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
+const countEl = document.getElementById("count")
 
 let currentQuestionIndex = 0;
 let score = 0;
@@ -88,7 +89,7 @@ function selectAnswer(e){
     const isCorrect = selectedBtn.dataset.correct === "true";
     if(isCorrect){
         selectedBtn.classList.add("correct");
-
+        score++;
     }else{
         selectedBtn.classList.add("incorrect");
     }
@@ -102,6 +103,32 @@ function selectAnswer(e){
     nextButton.style.display = "block";
 }
 
+function showScore(){
+    resetState();
+    questionElement.innerHTML = `You scored ${score} our of ${questions.length}!`;
+    nextButton.innerHTML = "Play Again";
+    nextButton.style.display = "none";
+    countEl.style.display = "none";
+}
+
+
+
+function handleNextButton(){
+    currentQuestionIndex++;
+    if(currentQuestionIndex < questions.length){
+        showQuestion();
+    }else{
+        showScore();
+    }
+}
+nextButton.addEventListener("click", ()=>{
+    if(currentQuestionIndex < questions.length){
+        handleNextButton();
+        countEl.innerHTML = `${currentQuestionIndex + 1} of ${questions.length}`;
+    }else{
+        startQuiz();
+    }
+})
 startQuiz();
 
 
